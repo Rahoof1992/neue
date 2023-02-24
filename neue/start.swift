@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  start.swift
 //  neue
 //
 //  Created by Rahoof Jamil on 23.02.23.
@@ -7,18 +7,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct start: View {
     var body: some View {
         VStack {
-            Text("Meine App")
+            Text("Car Viewer")
                 .font(.largeTitle)
+                .foregroundColor(Color.gray)
                 .fontWeight(.bold)
-                .padding(.top, 50)
+                .italic()
+                .padding(.top, 100)
 
-            Image(systemName: "person.circle.fill")
+            Image(systemName: "car.fill")
                 .resizable()
                 .frame(width: 200, height: 200)
-                .padding()
+                .padding(.top, 150)
 
             Spacer()
         }
@@ -26,8 +28,8 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct start_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        start()
     }
 }
